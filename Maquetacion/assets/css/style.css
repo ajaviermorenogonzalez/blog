@@ -100,6 +100,7 @@
         background: white;
         color: rgb(88, 88, 88);
         padding: 10px;
+        padding-bottom: 0px;
         width: 100px;
         height: 35px;
         margin: 0px auto;
@@ -116,6 +117,16 @@
     .btn-white:hover {
         background: #444;
         color: white;
+    }
+    
+    #slider.slider-small {
+        height: 150px;
+    }
+    
+    #slider.slider-small h1 {
+        margin-top: 0.2px;
+        padding: 0px;
+        padding-top: 53px;
     }
     /*Clases auxiliares*/
     
