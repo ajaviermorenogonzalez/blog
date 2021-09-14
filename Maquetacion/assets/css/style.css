@@ -321,3 +321,23 @@
         clear: both;
         float: none;
     }
+    /*RESPONSIVE*/
+    /*Desde la ancuhra 0px hasta la anchura 1490 px de pantalla
+    El media query más pequeño reescribe lo que ha hecho el media query más grande*/
+    
+    @media(max-width:1489px) {
+        /*Se ejecutaran estos estilos*/
+        .center {
+            width: 85%;
+        }
+    }
+    
+    @media(max-width:1315px) {
+        /*Se ejecutaran estos estilos*/
+        .center {
+            width: 95%;
+        }
+        #menu ul {
+            width: auto;
+        }
+    }
