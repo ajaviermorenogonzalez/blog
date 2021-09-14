@@ -6,11 +6,6 @@
     <title>Maquetacion para el Master en Frameworks JavaScript</title>
     <link rel="stylesheet" href="assets/css/style.css">
 
-    <!-- Replica articulos publicados-->
-    <script type="text/javaScript">
-
-        window.addEventListener("load",function () { var template = document.getElementById("article-template"); var articles = document.getElementById("articles"); for (var i = 0 ; i
-        <4 ; i++){ var clonado=template.cloneNode(true); clonado.removeAttribute( "id"); var h2=clonado.getElementsByTagName( "h2")[0]; h2.innerHTML=h2.textContent + ' ' + (i+1); articles.appendChild(clonado); } }) </script>
 </head>
 
 <body>
@@ -53,32 +48,32 @@
 
     </header>
 
-    <div id="slider" class="slider-big">
-        <h1>Bienvenidos al curso de React con Victor Robles</h1>
-        <a href="#" class="btn-white"> Ir al blog </a>
-    </div>
-
     <div class="center">
         <section id="content">
-            <h2 class="subheader">Últimos artículos</h2>
+            <h1 class="subheader">Formulario</h1>
 
-            <!-- Listado artículos-->
-            <div id="articles">
-                <article class="article-item" id="article-template">
+            <form class="mid-form">
+                <div class="form-group">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre">
+                </div>
+                <div class="form-group">
+                    <label for="apellidos">Apellidos</label>
+                    <input type="text" name="apellidos">
+                </div>
+                <div class="form-group">
+                    <label for="bio">Biografia</label>
+                    <textarea name="bio"></textarea>
+                </div>
+                <div class="form-group radiobuttons">
+                    <input type="radio" name="genero" value="hombre" />Hombre
+                    <input type="radio" name="genero" value="mujer" />Mujer
+                    <input type="radio" name="genero" value="otro" />Otro
+                </div>
+                <div class="clearfix"></div>
 
-                    <div class="image-wrap">
-                        <img src="assets/images/paisaje-prueba.jpg" alt="Paisaje" />
-                    </div>
-
-                    <h2>Articulo de prueba</h2>
-                    <span class="date">
-                        Hace 5 minutos
-                    </span>
-                    <a href="article.html">Leer mas...</a>
-                    <div class="clearfix"></div>
-                </article>
-
-            </div>
+                <input type="submit" value="Enviar" class="btn btn-success" />
+            </form>
 
         </section>
 
